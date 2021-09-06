@@ -8,3 +8,17 @@
 html {
   font-size: 62.5%;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+body {
+  background-color: $color-body;
+}
