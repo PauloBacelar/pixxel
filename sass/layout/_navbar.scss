@@ -1,0 +1,104 @@
+.nav {
+  height: 8rem;
+  //width: 100%;
+  padding: 0.5em calc((100vw - 1200px) / 2);
+  font-size: 2.4rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    visibility: hidden;
+    display: none;
+  }
+
+  &__logo {
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
+    transition: all 0.3s ease;
+  }
+
+  &__link {
+    padding: 0 1.6rem;
+    font-size: 1.8rem;
+    color: $secondary-color;
+    transition: all 0.3s ease;
+  }
+
+  &__link:hover,
+  &__logo:hover {
+    color: $primary-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4.8rem;
+      padding: 0;
+    }
+
+    &__menu {
+      visibility: hidden;
+      display: none;
+    }
+
+    &__logo {
+      font-size: 1.8rem;
+    }
+
+    &__logo-box {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      visibility: visible;
+      height: 40%;
+      width: 5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 15px;
+      margin-right: 1.2rem;
+      position: relative;
+      cursor: pointer;
+
+      &--1,
+      &--2,
+      &--3 {
+        height: 2px;
+        width: 50%;
+        background-color: $secondary-color;
+        border-radius: 100px;
+        transition: all ease 0.3s;
+      }
+
+      &-active {
+        margin-top: 22.5px;
+        transition: all ease 0.3s;
+
+        .nav__icon--1 {
+          transform: rotate(45deg);
+          position: absolute;
+        }
+
+        .nav__icon--2 {
+          transform: rotate(135deg);
+        }
+
+        .nav__icon--3 {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
