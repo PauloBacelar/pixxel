@@ -8,6 +8,8 @@
   &__left {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -30,6 +32,27 @@
     }
   }
 
+  &__btn {
+    background-color: $primary-color;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: all ease 0.3s;
+
+    &:hover {
+      transform: translateY(4px);
+      background-color: darken($primary-color, 2%);
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     height: 100vh;
@@ -38,11 +61,20 @@
     &__right {
       margin-bottom: 5rem;
     }
+
+    &__text {
+      font-size: 4rem;
+    }
+
+    &__btn {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   @media screen and (max-width: 1024px) {
     &__text {
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     &__right img {
@@ -56,9 +88,22 @@
       max-width: 40rem;
       max-height: 22.5rem;
     }
+  }
 
+  @media screen and (max-width: 1024px) and (min-height: 1024px) {
     &__text {
-      font-size: 4rem;
+      font-size: 5rem;
+    }
+
+    &__right {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      img {
+        max-width: 50rem;
+        max-height: 40rem;
+      }
     }
   }
 }
