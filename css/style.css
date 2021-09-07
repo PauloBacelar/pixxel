@@ -57,11 +57,13 @@ body {
       bottom: 0;
       width: 100%;
       height: 4.8rem;
-      padding: 0; }
+      padding: 0 2.4rem;
+      margin: 0;
+      background-color: #fff; }
     .nav__menu {
       position: absolute;
       top: 100%;
-      left: -24px;
+      left: 0;
       height: 100vh;
       width: 100vw;
       background-color: #00c666;
@@ -108,3 +110,74 @@ body {
           transform: rotate(135deg); }
         .nav__icon-active .nav__icon--3 {
           opacity: 0; } }
+
+.home {
+  margin: 0 auto;
+  padding: 0.5em calc((100vw - 1200px) / 2);
+  margin: 0 2.4rem;
+  display: flex;
+  flex-direction: row; }
+  .home__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%; }
+  .home__right {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .home__right img {
+      max-width: 57.6rem;
+      max-height: 40rem; }
+  .home__text {
+    font-size: 6.4rem; }
+    .home__text--top {
+      color: #00c666; }
+  .home__btn {
+    background-color: #00c666;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: all ease 0.3s; }
+    .home__btn:hover {
+      transform: translateY(4px);
+      background-color: #00bc61; }
+  .home__icon {
+    font-size: 2rem; }
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: column-reverse;
+      height: 100vh;
+      justify-content: center; }
+      .home__right {
+        margin-bottom: 5rem; }
+      .home__text {
+        font-size: 4rem; }
+      .home__btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem; } }
+  @media screen and (max-width: 1024px) {
+    .home__text {
+      font-size: 4rem; }
+    .home__right img {
+      max-width: 50rem;
+      max-height: 30rem; } }
+  @media screen and (max-width: 414px) {
+    .home__right img {
+      max-width: 40rem;
+      max-height: 22.5rem; } }
+  @media screen and (max-width: 1024px) and (min-height: 1024px) {
+    .home__text {
+      font-size: 5rem; }
+    .home__right {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      .home__right img {
+        max-width: 50rem;
+        max-height: 40rem; } }
