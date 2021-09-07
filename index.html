@@ -7,18 +7,19 @@
     <title>Pixxel</title>
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="nav">
       <div class="nav__logo-box">
         <h1 class="nav__logo"><a href="#">pixxel</a></h1>
       </div>
       <div class="nav__menu" id="nav-menu">
         <ul>
-          <li class="nav__link"><a href="#">Home</a></li>
+          <li class="nav__link"><a href="#home">Home</a></li>
           <li class="nav__link"><a href="#">About</a></li>
           <li class="nav__link"><a href="#">Pricing</a></li>
           <li class="nav__link"><a href="#">Contact</a></li>
@@ -30,6 +31,24 @@
         <div class="nav__icon--3"></div>
       </div>
     </nav>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home__left">
+          <div class="home__text-box">
+            <h2 class="home__text home__text--top">Not just developers</h2>
+            <h2 class="home__text">We're artists</h2>
+
+            <a href="#" class="home__btn"
+              >Learn more <i class="uil uil-arrow-down home__icon"></i
+            ></a>
+          </div>
+        </div>
+        <div class="home__right">
+          <img src="./img/home-img.svg" alt="" />
+        </div>
+      </section>
+    </main>
 
     <!-- Script -->
     <script src="./script.js"></script>
