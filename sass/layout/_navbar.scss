@@ -7,6 +7,7 @@
   margin-right: 2.4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__icon {
     visibility: hidden;
@@ -46,6 +47,7 @@
       padding: 0 2.4rem;
       margin: 0;
       background-color: #fff;
+      z-index: 9999;
     }
 
     &__menu {
@@ -90,7 +92,6 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      margin-top: 15px;
       margin-right: 1.2rem;
       position: relative;
       cursor: pointer;
