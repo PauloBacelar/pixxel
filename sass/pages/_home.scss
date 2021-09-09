@@ -119,13 +119,6 @@
     margin-top: 100px;
   }
 
-  &__main {
-    h2 {
-      font-size: 3.2rem;
-      color: $primary-color;
-    }
-  }
-
   &__main-boxes {
     display: flex;
     margin-top: 1.5rem;
@@ -213,14 +206,70 @@
   &__box-text {
     h3 {
       color: $primary-color;
-      font-size: 2.2rem;
-      margin: 1rem 0;
     }
 
     p {
       font-size: 1.4rem;
       line-height: 2.5rem;
       width: 85%;
+    }
+  }
+}
+
+.pricing {
+  padding: 0 calc((100vw - 1200px) / 2);
+  margin: 0 2.4rem;
+  padding-bottom: 10rem;
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 27.5rem;
+    background-color: $primary-color;
+    padding: 2rem 2rem 5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    ul {
+      margin-top: 2rem;
+
+      li {
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 4.5rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 75%;
+      max-width: 450px;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__button {
+    background-color: $color-body;
+    font-size: 2.2rem;
+    padding: 2rem 4rem;
+    border-radius: 10rem;
+    transition: all ease 0.3s;
+
+    &:hover {
+      background-color: darken($color-body, 10%);
     }
   }
 }
