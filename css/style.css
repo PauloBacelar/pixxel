@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+.u-strikethrough {
+  text-decoration: line-through;
+  color: #0d0d0d; }
+
 *,
 *::after,
 *::before {
@@ -23,6 +27,14 @@ body {
 
 body {
   font-family: "Kumbh Sans", sans-serif; }
+
+h2 {
+  font-size: 3.2rem;
+  color: #00c666; }
+
+h3 {
+  font-size: 2.2rem;
+  margin: 1rem 0; }
 
 .nav {
   height: 8rem;
@@ -193,9 +205,6 @@ body {
   @media screen and (min-width: 768px) {
     .about {
       margin-top: 100px; } }
-  .about__main h2 {
-    font-size: 3.2rem;
-    color: #00c666; }
   .about__main-boxes {
     display: flex;
     margin-top: 1.5rem; }
@@ -256,10 +265,49 @@ body {
         width: 100%;
         height: 200px; } }
   .about__box-text h3 {
-    color: #00c666;
-    font-size: 2.2rem;
-    margin: 1rem 0; }
+    color: #00c666; }
   .about__box-text p {
     font-size: 1.4rem;
     line-height: 2.5rem;
     width: 85%; }
+
+.pricing {
+  padding: 0 calc((100vw - 1200px) / 2);
+  margin: 0 2.4rem;
+  padding-bottom: 10rem; }
+  .pricing__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; }
+    @media screen and (max-width: 1024px) {
+      .pricing__cards {
+        flex-direction: column;
+        align-items: center; } }
+  .pricing__card {
+    width: 27.5rem;
+    background-color: #00c666;
+    padding: 2rem 2rem 5rem 2rem;
+    border-radius: 1rem;
+    text-align: center; }
+    .pricing__card ul {
+      margin-top: 2rem; }
+      .pricing__card ul li {
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 3rem; }
+        .pricing__card ul li:last-child {
+          margin-bottom: 4.5rem; }
+    @media screen and (max-width: 1024px) {
+      .pricing__card {
+        width: 75%;
+        max-width: 450px;
+        margin-bottom: 1.5rem; } }
+  .pricing__button {
+    background-color: #f7f7f7;
+    font-size: 2.2rem;
+    padding: 2rem 4rem;
+    border-radius: 10rem;
+    transition: all ease 0.3s; }
+    .pricing__button:hover {
+      background-color: #dedede; }
