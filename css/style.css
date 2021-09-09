@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 .u-strikethrough {
   text-decoration: line-through;
-  color: #0d0d0d; }
+  color: #333333; }
 
 *,
 *::after,
@@ -25,7 +25,10 @@ body {
   background-color: #f7f7f7;
   min-width: 280px; }
 
-body {
+body,
+input,
+textarea,
+button {
   font-family: "Kumbh Sans", sans-serif; }
 
 h2 {
@@ -35,6 +38,9 @@ h2 {
 h3 {
   font-size: 2.2rem;
   margin: 1rem 0; }
+
+.home__text--bottom {
+  color: #222222 !important; }
 
 .nav {
   height: 8rem;
@@ -269,12 +275,14 @@ h3 {
   .about__box-text p {
     font-size: 1.4rem;
     line-height: 2.5rem;
-    width: 85%; }
+    width: 85%;
+    color: #222222; }
 
 .pricing {
   padding: 0 calc((100vw - 1200px) / 2);
   margin: 0 2.4rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  color: #222222; }
   .pricing__cards {
     width: 100%;
     display: flex;
@@ -311,3 +319,51 @@ h3 {
     transition: all ease 0.3s; }
     .pricing__button:hover {
       background-color: #dedede; }
+
+.contact {
+  padding: 0 calc((100vw - 1200px) / 2);
+  margin: 0 2.4rem;
+  padding-bottom: 10rem; }
+  .contact__form {
+    margin: 1.5rem auto 0 auto; }
+    .contact__form-label {
+      font-size: 2rem;
+      color: #222222;
+      margin-bottom: 100rem; }
+    .contact__form-group {
+      margin-bottom: 3rem; }
+      .contact__form-group:not(:last-child) {
+        margin-right: 3rem; }
+      .contact__form-group textarea {
+        height: 20rem;
+        width: 40rem; }
+      .contact__form-group--top {
+        display: flex; }
+    .contact__form-input {
+      padding: 1rem;
+      outline: none;
+      border: 3px solid transparent;
+      transition: all ease 0.3s;
+      background-color: #f0eefc;
+      font-size: 1.8rem;
+      width: 30rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem; }
+      .contact__form-input:focus {
+        border-bottom: 3px solid #00c666; }
+      .contact__form-input::placeholder {
+        font-size: 1.8rem; }
+  .contact__btn {
+    background-color: #00c666;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: all ease 0.3s;
+    border: none;
+    cursor: pointer; }
+    .contact__btn:hover {
+      transform: translateY(4px);
+      background-color: #00bc61; }
