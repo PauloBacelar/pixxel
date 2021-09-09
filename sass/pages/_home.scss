@@ -212,6 +212,7 @@
       font-size: 1.4rem;
       line-height: 2.5rem;
       width: 85%;
+      color: #222222;
     }
   }
 }
@@ -220,6 +221,7 @@
   padding: 0 calc((100vw - 1200px) / 2);
   margin: 0 2.4rem;
   padding-bottom: 10rem;
+  color: #222222;
 
   &__cards {
     width: 100%;
@@ -270,6 +272,77 @@
 
     &:hover {
       background-color: darken($color-body, 10%);
+    }
+  }
+}
+
+.contact {
+  padding: 0 calc((100vw - 1200px) / 2);
+  margin: 0 2.4rem;
+  padding-bottom: 10rem;
+
+  &__form {
+    margin: 1.5rem auto 0 auto;
+
+    &-label {
+      font-size: 2rem;
+      color: #222222;
+      margin-bottom: 100rem;
+    }
+
+    &-group {
+      margin-bottom: 3rem;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      textarea {
+        height: 20rem;
+        width: 40rem;
+      }
+
+      &--top {
+        display: flex;
+      }
+    }
+
+    &-input {
+      padding: 1rem;
+      outline: none;
+      border: 3px solid transparent;
+      transition: all ease 0.3s;
+      background-color: #f0eefc;
+      font-size: 1.8rem;
+      width: 30rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem;
+
+      &:focus {
+        border-bottom: 3px solid $primary-color;
+      }
+
+      &::placeholder {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $primary-color;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: all ease 0.3s;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(4px);
+      background-color: darken($primary-color, 2%);
     }
   }
 }
