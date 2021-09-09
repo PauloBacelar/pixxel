@@ -32,25 +32,25 @@
       </div>
     </nav>
 
+    <!-- Home section -->
+    <section class="home" id="home">
+      <div class="home__left">
+        <div class="home__text-box">
+          <h2 class="home__text home__text--top">Not just developers</h2>
+          <h2 class="home__text home__text--bottom">We're artists</h2>
+
+          <a href="#about" class="home__btn"
+            >Learn more <i class="uil uil-arrow-down home__icon"></i
+          ></a>
+        </div>
+      </div>
+      <div class="home__right">
+        <img src="./img/home-img.svg" alt="Developers illustration" />
+      </div>
+    </section>
+
+    <!-- About section -->
     <main>
-      <!-- Home section -->
-      <section class="home" id="home">
-        <div class="home__left">
-          <div class="home__text-box">
-            <h2 class="home__text home__text--top">Not just developers</h2>
-            <h2 class="home__text">We're artists</h2>
-
-            <a href="#about" class="home__btn"
-              >Learn more <i class="uil uil-arrow-down home__icon"></i
-            ></a>
-          </div>
-        </div>
-        <div class="home__right">
-          <img src="./img/home-img.svg" alt="" />
-        </div>
-      </section>
-
-      <!-- About section -->
       <section class="about" id="about">
         <div class="about__main">
           <h2>About us</h2>
@@ -163,6 +163,46 @@
         </div>
       </section>
     </main>
+
+    <!-- Contact -->
+    <section class="contact">
+      <h2>How can we help you?</h2>
+
+      <form class="contact__form">
+        <div class="contact__form-group--top">
+          <div class="contact__form-group">
+            <label class="contact__form-label">Your name <br /></label>
+            <input
+              type="text"
+              class="contact__form-input"
+              placeholder="e.g. Jhon"
+            />
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__form-label">Your e-mail <br /></label>
+            <input
+              type="text"
+              class="contact__form-input"
+              placeholder="e.g. jhon@gmail.com"
+            />
+          </div>
+        </div>
+
+        <div class="contact__form-group">
+          <label class="contact__form-label">Message <br /></label>
+          <textarea
+            cols="30"
+            rows="10"
+            class="contact__form-input"
+            placeholder="What do you have to say?"
+          ></textarea>
+        </div>
+
+        <button class="contact__btn" href="#">
+          Send <i class="uil uil-message contact__icon"></i>
+        </button>
+      </form>
+    </section>
 
     <!-- Script -->
     <script src="./script.js"></script>
