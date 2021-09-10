@@ -1,0 +1,48 @@
+.footer {
+  background-color: $primary-color;
+  height: 25rem;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    margin: 2.4rem;
+    padding: 0 calc((100vw - 1200px) / 2);
+    color: $secondary-color;
+    font-size: 2.4rem;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: lighten($secondary-color, 20%);
+    }
+  }
+
+  &__email {
+    margin-top: 2rem;
+    position: relative;
+
+    &-text {
+      font-size: 1.8rem;
+      display: inline;
+      position: absolute;
+      margin-left: -1.5rem;
+      top: 0.3rem;
+    }
+  }
+
+  &__phone {
+    margin-top: 1.5rem;
+    position: relative;
+
+    &-text {
+      font-size: 1.8rem;
+      display: inline;
+      position: absolute;
+      margin-left: 0.55rem;
+      top: 0.3rem;
+    }
+  }
+}
