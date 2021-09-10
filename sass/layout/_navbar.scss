@@ -8,6 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: box-shadow linear 0.3s;
+
+  &__box-shadow {
+    @media screen and (max-width: 768px) {
+      box-shadow: 0 1rem 2rem $secondary-color;
+    }
+  }
 
   &__icon {
     visibility: hidden;
@@ -30,6 +37,10 @@
     font-size: 1.8rem;
     color: $secondary-color;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.4rem !important;
+    }
   }
 
   &__link:hover,
