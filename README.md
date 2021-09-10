@@ -37,7 +37,7 @@ Pixxel (fake) IT company landing page, using HTML, CSS, Sass and JavaScript.
 
 ### 🚀 Deploy 
 
-This project is hosted on [Netlify](https://pixxel.netlify.app/).
+This project is hosted on [Netlify](https://pixxel-paulobacelar.netlify.app/).
 
 ### ✅ Demo
 <img src="https://github.com/PauloBacelar/pixxel/blob/main/img/preview/home.png" />
