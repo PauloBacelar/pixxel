@@ -300,10 +300,20 @@
       textarea {
         height: 20rem;
         width: 40rem;
+
+        @media screen and (max-width: 768px) {
+          width: 75%;
+          min-width: 20rem;
+        }
       }
 
       &--top {
         display: flex;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          min-width: 25rem;
+        }
       }
     }
 
@@ -325,6 +335,10 @@
 
       &::placeholder {
         font-size: 1.8rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 75%;
       }
     }
   }
