@@ -57,10 +57,10 @@ Also, an IDE is recommended for editing the code. I recommend [VSCode](https://c
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/PauloBacelar/netflix-clone
+$ git clone https://github.com/PauloBacelar/pixxel
 ```
 
-Open index.html file.
+Open index.html file
 
 ### 🚀 Technologies
 
